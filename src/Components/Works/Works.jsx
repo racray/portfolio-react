@@ -45,8 +45,8 @@ export default function Works() {
         className="slider"
         style={{ transform: `translateX(-${currentSlide * 100}vw)` }}
       >
-        {data.map((d) => (
-          <div className="container">
+        {data.map((d,id) => (
+          <div className="container" key={id}>
             <div className="item">
               <div className="left">
                 <div className="leftContainer">

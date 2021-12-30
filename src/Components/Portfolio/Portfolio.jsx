@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../PortfolioList/PortfolioList";
+import Test from "./Test";
 import "./Portfolio.scss";
 import {
   featuredPortfolio,
@@ -55,8 +56,9 @@ export default function Portfolio() {
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
       <ul>
-        {list.map((item) => (
+        {list.map((item,id) => (
           <PortfolioList
+            key={id}
             title={item.title}
             active={selected === item.id} // this checks if selected is true or false
             setSelected={setSelected}
@@ -65,8 +67,9 @@ export default function Portfolio() {
         ))}
       </ul>
       <div className="container">
-        {data.map((d) => (
-          <div className="item">
+        {data.map((d,id) => (
+          <div className="item" key={id}>
+            <Test key={id}/>
             <img
               src={d.img}
               alt=""

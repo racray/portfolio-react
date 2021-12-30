@@ -46,8 +46,8 @@
         }
       }
 
-      textarea {
-        width: 300px;
+      #message {
+        width: 320px;
         height: 200px;
         font-size: 14px;
 
@@ -59,7 +59,7 @@
 
       button {
         width: 150px;
-        height: 30px;
+        height: 50px;
         color: white;
         background-color: crimson;
         border: none;
@@ -74,6 +74,26 @@
 
       span {
         color: green;
+      }
+    }
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: crimson;
+    color: white;
+    display:none;
+    text-align: center;
+
+    @include mobile{
+      display:block;
+    }
+
+    span{
+      @include mobile{
+        margin:1rem;
       }
     }
   }
