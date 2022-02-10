@@ -1,22 +1,12 @@
 import { useEffect, useState } from "react";
 import PortfolioList from "../PortfolioList/PortfolioList";
-import Test from "./Test";
 import "./Portfolio.scss";
-import {
-  featuredPortfolio,
-  webPortfolio,
-  designPortfolio,
-  contentPortfolio,
-} from "../../data";
+import { webPortfolio, designPortfolio, contentPortfolio } from "../../data";
 
 export default function Portfolio() {
   const [selected, setSelected] = useState("featured");
   const [data, setData] = useState([]);
   const list = [
-    {
-      id: "featured",
-      title: "Featured",
-    },
     {
       id: "web",
       title: "Web App",
@@ -34,9 +24,6 @@ export default function Portfolio() {
 
   useEffect(() => {
     switch (selected) {
-      case "featured":
-        setData(featuredPortfolio);
-        break;
       case "web":
         setData(webPortfolio);
         break;
@@ -48,7 +35,7 @@ export default function Portfolio() {
         setData(contentPortfolio);
         break;
       default:
-        setData(featuredPortfolio);
+        setData(webPortfolio);
     }
   }, [selected]);
 
@@ -56,7 +43,7 @@ export default function Portfolio() {
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
       <ul>
-        {list.map((item,id) => (
+        {list.map((item, id) => (
           <PortfolioList
             key={id}
             title={item.title}
@@ -67,15 +54,15 @@ export default function Portfolio() {
         ))}
       </ul>
       <div className="container">
-        {data.map((d,id) => (
-          <div className="item" key={id}>
-            <Test key={id}/>
-            <img
-              src={d.img}
-              alt=""
-            />
+        {data.map((d, id) => (
+            <a href={d.web} target="_blank" rel="noreferrer">
+            <div className="item" key={id}>
+            <img src={d.img} alt="" />
+            
+            
             <h3>{d.title}</h3>
           </div>
+          </a>
         ))}
       </div>
     </div>

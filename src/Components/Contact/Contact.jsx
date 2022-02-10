@@ -5,7 +5,6 @@ import TextField from "@mui/material/TextField";
 import * as yup from "yup";
 import { useFormik } from "formik";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-// import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const formValidationSchema = yup.object({
   email: yup
@@ -80,8 +79,7 @@ export default function Contact() {
         </form>
       </div>
       <div className="footer">
-        {/* <WhatsAppIcon className="icon" />
-        <span className="itemNumber">+91-7057690637</span> */}
+
         <MailOutlineIcon className="icon" />
         <span>rayedkhan007@gmail.com</span>
       </div>
