@@ -47,7 +47,40 @@ export const designPortfolio = [
   },
 ];
 
-export const contentPortfolio = [
+
+
+export const resumePortfolio = [
+  {
+    id: 1,
+    title: "Resume of Rayed",
+    img: "assets/resume.png",
+    web: "https://docs.google.com/document/d/1pxQ13Lx8ecTi-Ob9j6DIQVCANtTUgtZMaOF6dtqwjWo/edit",
+  }
+];
+
+export const backendPortfolio = [
+  {
+    id: 1,
+    title: "Travel Map",
+    img: "assets/map-snip.png",
+    web: "https://github.com/racray/MERN-map-backend",
+  },
+
+  {
+    id: 2,
+    title: "E-commerce app",
+    img: "assets/ecommerce-snip.png",
+    web: "https://github.com/racray/Ecommerceapi",
+  },
+  {
+    id: 3,
+    title: "Movies App",
+    img: "assets/movies-snip.png",
+    web: "https://github.com/racray/b28wd-nodejs",
+  },
+];
+
+export const frontendPortfolio = [
   {
     id: 1,
     title: "Travel Map",
@@ -59,12 +92,12 @@ export const contentPortfolio = [
     id: 2,
     title: "E-commerce app",
     img: "assets/ecommerce-snip.png",
-    web: "https://kind-keller-3d8edb.netlify.app/",
+    web: "https://github.com/racray/Ecommerceclient",
   },
   {
     id: 3,
     title: "Movies App",
     img: "assets/movies-snip.png",
-    web: "https://ecstatic-elion-ae06f7.netlify.app/",
+    web: "https://github.com/racray/racray-react-test1",
   },
 ];

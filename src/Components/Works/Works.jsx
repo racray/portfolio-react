@@ -18,7 +18,7 @@ export default function Works() {
       icon: "./assets/globe.png",
       title: "Web Apps",
       desc:
-        "There are many web apps developed by me. Please check out my Projects for more details.",
+        "There are many web apps developed by me. Check out my Projects for more details.",
       img:
         "https://i.pinimg.com/originals/e9/c9/2f/e9c92f7869d682a6fa5a97fb8a298f30.jpg",
     },
