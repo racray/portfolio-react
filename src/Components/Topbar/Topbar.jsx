@@ -16,7 +16,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
             <MailOutlineIcon className="icon" />
             <span>rayedkhan007@gmail.com</span>
             <GitHubIcon className="icon"/>
-            <span><a href="https://github.com/racray" target="_blank">https://github.com/racray</a></span>
+            <span><a href="https://github.com/racray" target="_blank" rel="noreferrer" >https://github.com/racray</a></span>
           </div>
         </div>
         <div className="right">
