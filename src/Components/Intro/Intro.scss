@@ -25,6 +25,8 @@
 
       @include mobile{
         align-items: flex-start;
+        width: 500px;
+        height: 600px;
       }
 
       img {
@@ -33,7 +35,8 @@
         height: 38rem;
         width: 100rem;
         @include mobile{
-          height: 70%;
+          height: 100%;
+          top: 0rem;
         }
       }
     }

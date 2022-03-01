@@ -4,6 +4,8 @@ import LinearProgress, {
   linearProgressClasses,
 } from "@mui/material/LinearProgress";
 import { styled } from "@mui/material/styles";
+import { FrontskillsData,BackskillsData } from "../../data";
+
 
 const BorderLinearProgress = styled(LinearProgress)(({ theme }) => ({
   height: 10,
@@ -25,67 +27,37 @@ export default function Skills() {
       <div className="container">
         <div className="left-column">
           <h3>Frontend</h3>
-          <div className="progres-div">
-            <div className="progress-title">
-              <span className="progress-head">HTML</span>
-              <span className="progress-no">90%</span>
-            </div>
-            <div className="progress-bar">
-              <BorderLinearProgress variant="determinate" value={90} />
-            </div>
-          </div>
-          <div className="progres-div">
-            <div className="progress-title">
-              <span className="progress-head">CSS</span>
-              <span className="progress-no">75%</span>
-            </div>
-            <div className="progress-bar">
-              <BorderLinearProgress variant="determinate" value={75} />
-            </div>
-          </div>
-          <div className="progres-div">
-            <div className="progress-title">
-              <span className="progress-head">JavaScript</span>
-              <span className="progress-no">80%</span>
-            </div>
-            <div className="progress-bar">
-              <BorderLinearProgress variant="determinate" value={80} />
-            </div>
-          </div>
-          <div className="progres-div">
-            <div className="progress-title">
-              <span className="progress-head">React</span>
-              <span className="progress-no">80%</span>
-            </div>
-            <div className="progress-bar">
-              <BorderLinearProgress variant="determinate" value={80} />
-            </div>
-          </div>
+          {FrontskillsData.map(fr=> 
 
-          
-
+          <div className="progres-div">
+            <div className="progress-title">
+              <span className="progress-head">{fr.title}</span>
+              <span className="progress-no">{fr.progBar}%</span>
+            </div>
+            <div className="progress-bar">
+              <BorderLinearProgress variant="determinate" value={fr.progBar} />
+            </div>
+          </div>
+            )}
 
         </div>
+
+
         <div className="right-column">
           <h3>Backend</h3>
-          <div className="progres-div">
-            <div className="progress-title">
-              <span className="progress-head">NodeJS</span>
-              <span className="progress-no">70%</span>
-            </div>
-            <div className="progress-bar">
-              <BorderLinearProgress variant="determinate" value={70} />
-            </div>
-          </div>
-          <div className="progres-div">
-            <div className="progress-title">
-              <span className="progress-head">Express</span>
-              <span className="progress-no">60%</span>
-            </div>
-            <div className="progress-bar">
-              <BorderLinearProgress variant="determinate" value={60} />
-            </div>
-          </div>
+          {BackskillsData.map(bk=> 
+
+<div className="progres-div">
+  <div className="progress-title">
+    <span className="progress-head">{bk.title}</span>
+    <span className="progress-no">{bk.progBar}%</span>
+  </div>
+  <div className="progress-bar">
+    <BorderLinearProgress variant="determinate" value={bk.progBar} />
+  </div>
+</div>
+  )}
+
           <div className="database-div">
             <h3>DataBase</h3>
             <div className="progres-div">
