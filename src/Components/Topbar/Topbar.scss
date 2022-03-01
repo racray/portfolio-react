@@ -7,8 +7,8 @@
   }
   width: 100%;
   height: 70px;
-  background-color: white;
-  color: $mainColor;
+  background-color: rgb(53, 53, 53);
+  color: white;
   position: fixed;
   top: 0;
   z-index: 3;
@@ -17,18 +17,20 @@
   .wrapper {
     padding: 10px 30px;
     display: flex;
-    align-items: center;
+    // align-items: center;
     justify-content: space-between;
 
     .left {
       display: flex;
-      align-items: center;
+      // align-items: center;
       .logo {
         font-size: 40px;
         font-weight: 700;
         text-decoration: none;
         color: inherit;
-        margin-right: 40px;
+        // margin-right: 40px;
+        // padding: 13px 13px;
+        // margin-bottom: 55px;
       }
       .itemContainer {
         display: flex;
@@ -42,7 +44,6 @@
         .icon {
           font-size: 18px;
           margin-right: 5px;
-
         }
 
         span {
@@ -57,6 +58,35 @@
     }
 
     .right {
+      .navbar-content {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: center;
+
+        li {
+          color: rgb(247, 112, 112);
+          // height: 30px;
+          // width: 50px;
+          padding: 13px 13px;
+          border-radius: 15%;
+          a {
+            font-size: inherit;
+            color: inherit;
+            text-decoration: none;
+          }
+
+          &:hover {
+            background-color: crimson;
+            color: white;
+          }
+        }
+
+        @include mobile {
+          display: none;
+        }
+      }
+
       .hamburger {
         width: 32px;
         height: 25px;
@@ -64,13 +94,19 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+        // margin-bottom: 30px;
+
 
         span {
+          display: none;
           width: 100%;
           height: 3px;
           background-color: $mainColor;
           transform-origin: left;
           transition: all 2s ease;
+          @include mobile {
+            display: block;
+          }
         }
       }
     }

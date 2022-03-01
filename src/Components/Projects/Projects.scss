@@ -1,0 +1,159 @@
+@import "../../global.scss";
+.projects {
+  margin-top: 3rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin-top: 25px;
+    font-size: 50px;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+
+    .card {
+      width: 800px;
+      height: 280px;
+      margin-top: 6rem;
+      display: flex;
+      flex-direction: row;
+      background-color: white;
+      margin-bottom: 1rem;
+      border: 0.5px solid rgb(160, 156, 156);
+      -webkit-box-shadow: 0px -1px 52px -12px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 0px -1px 52px -12px rgba(0, 0, 0, 0.75);
+      box-shadow: 0px -1px 52px -12px rgba(0, 0, 0, 0.75);
+
+      .left {
+        overflow: hidden;
+        .img-container {
+          // overflow: hidden;
+          // position: relative
+
+          @include mobile {
+            overflow: hidden;
+            height:200px;
+            width:400px;
+          }
+
+          img {
+            // overflow: hidden;
+            width: 350px;
+            height: 280px;
+            object-fit: cover;
+
+          }
+        }
+        .floating-div {
+          height: 285px;
+          background-color: #fff;
+          background-color: rgba(255, 255, 255, 0.5);
+          position: relative;
+          top: -285px;
+          transform: translateX(-300px);
+          .floating-text {
+            overflow: hidden;
+            margin-top: 3rem;
+            margin-left: 1rem;
+
+            .source-code {
+              transform: translateY(-30px);
+              .icon-text{
+                margin-top:1rem;
+                display:flex;
+                align-items: center;
+                gap:5px;
+                text-decoration: none;
+                color: rgb(87, 9, 87);
+                &:hover{
+                
+                  color:white;
+                  background-color:rgb(87, 9, 87);
+                  transition: all 0.8s;
+                  
+                }
+              }
+            }
+            .live {
+              transform: translateY(30px);
+              .icon-text{
+                display:flex;
+                align-items: center;
+                gap:5px;
+                &:hover{
+                
+                  color:white;
+                  background-color:rgb(87, 9, 87);
+                  transition: all 0.8s;
+
+                }
+              }
+            }
+
+            div {
+              color: rgb(87, 9, 87);
+              font-weight: 500;
+              margin-top: 1rem;
+
+            }
+          }
+        }
+      }
+
+      .right {
+        width: 650px;
+        .right-text {
+          margin-left: 3rem;
+          margin-top: 2rem;
+          @include mobile{
+            margin-left:0.5rem;
+            margin-top:0;
+          }
+          h1 {
+            font-size: 3rem;
+            @include mobile{
+              font-size: 2rem;
+            }
+          }
+          p{
+            color:rgb(139, 134, 134);
+          }
+        }
+        @include mobile{
+          width:400px;
+          height:200px;
+
+        }
+      }
+
+      &:hover {
+        .floating-div {
+          transform: translateX(0px);
+          transition: all 0.5s;
+          .floating-text {
+            .source-code {
+              transform: translateY(0px);
+              transition: all 1s;
+            }
+            .live {
+              transform: translateY(0px);
+              transition: all 1s;
+            }
+          }
+        }
+      }
+
+      @include mobile {
+        
+          width: 300px;
+          flex-direction: column;
+          height:400px;
+      }
+
+    }
+  }
+}

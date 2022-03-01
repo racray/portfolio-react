@@ -46,7 +46,7 @@ export default function Contact() {
     <div className="contact" id="contact">
       <div className="left">
         <img
-          src="https://www.reson8.ae/assets/images/common/contact-us-banner-image.png"
+          src=""
           alt=""
         />
       </div>

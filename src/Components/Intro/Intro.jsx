@@ -32,7 +32,7 @@ export default function Intro() {
             Front-end  <span  ref={textRef}></span>
           </h3>
         </div>
-        <a href="#portfolio">
+        <a href="#about">
           <img src="assets/down.png" alt="" />
         </a>
       </div>
