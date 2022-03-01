@@ -6,7 +6,7 @@ import About from './Components/About/About';
 import Menu from './Components/Menu/Menu';
 import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
-import Contact from './Components/Contact3/Contact'
+import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer';
 function App() {
   console.log("This is a MERN stack portfolio. But i like to focus more on Reactjs")

@@ -14,7 +14,12 @@ export default function About() {
                 <p>
                 A self-taught developer.I'm enthusiastic about learning new skills, expanding my knowledge, and leveraging my learnings.I enjoy creating user experience design, interfaces and web development.
                 </p>
-                <Button><ArticleIcon/> Resume</Button>
+
+                <a href="https://docs.google.com/document/d/1pxQ13Lx8ecTi-Ob9j6DIQVCANtTUgtZMaOF6dtqwjWo/edit?usp=sharing" target="_blank" rel="noreferrer"> 
+                <Button><ArticleIcon/>
+                <span>Resume</span>
+                </Button>
+                </a>
             </div>
         </div>
 
