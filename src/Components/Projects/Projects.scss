@@ -1,6 +1,6 @@
 @import "../../global.scss";
 .projects {
-  margin-top: 3rem;
+  margin-top: 13rem;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -131,6 +131,12 @@
       }
 
       &:hover {
+
+        img{
+          transform: scale(1.5) rotate(1deg);
+          transition: all 1.5s;
+        }
+
         .floating-div {
           transform: translateX(0px);
           transition: all 0.5s;

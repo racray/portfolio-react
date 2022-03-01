@@ -6,6 +6,8 @@ import About from './Components/About/About';
 import Menu from './Components/Menu/Menu';
 import Skills from './Components/Skills/Skills';
 import Projects from './Components/Projects/Projects';
+import Contact from './Components/Contact3/Contact'
+import Footer from './Components/Footer/Footer';
 function App() {
   console.log("This is a MERN stack portfolio. But i like to focus more on Reactjs")
   const [menuOpen,setMenuOpen] = useState(false);
@@ -14,11 +16,15 @@ function App() {
       <Topbar menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
+
+
         <Intro/>
         <About/>
         <Skills/>
         <Projects/>
-        {/* <Contact/> */}
+        <Contact/>
+        <Footer/>
+
       </div>
     </div>
   );

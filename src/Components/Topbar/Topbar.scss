@@ -58,6 +58,8 @@
     }
 
     .right {
+      overflow: hidden;
+
       .navbar-content {
         display: flex;
         flex-direction: row;
@@ -89,6 +91,10 @@
       }
 
       .hamburger {
+        position: relative;
+        top:1rem;
+        overflow: hidden;
+
         width: 32px;
         height: 25px;
         display: flex;

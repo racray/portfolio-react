@@ -152,7 +152,7 @@ export const cardDetails = [
     title: "Film Encyclopedia",
     textHeader: "Film Encyclopedia",
     textPara: "AN ENCYCLOPEDIA OF FILMS",
-    img: "https://2.bp.blogspot.com/-RMJ8M83Aeow/VsBrxoNEEtI/AAAAAAAAGpE/FbW9rnDuAWw/w680/Tamil-movie-Box-Office-Collection-2016-Report-Verdict-Hit-Ya-Flop-mt-wiki.jpg",
+    img: "https://thewell.unc.edu/wp-content/uploads/sites/1007/2020/04/film1.jpg",
     webFront: "https://github.com/racray/racray-react-test1",
     webBack: "https://github.com/racray/b28wd-nodejs",
     webLive: "https://ecstatic-elion-ae06f7.netlify.app/",

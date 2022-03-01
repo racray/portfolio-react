@@ -1,6 +1,6 @@
 @import "../../global.scss";
 .about {
-  margin-top: 6rem;
+  margin-top: 10rem;
   background-color: white;
   display: flex;
   flex-direction: column;
@@ -24,6 +24,9 @@
       width: 400px;
       object-fit: cover;
       border-radius: 1rem;
+      @include mobile{
+        width:100%;
+    }
       
     }
     .about-text {
@@ -40,7 +43,22 @@
         background-color: rgb(61, 21, 61);
         color: white;
         font-weight: 400;
+
+
+        &:hover{
+          background-color: rgb(31, 9, 31);
+          transition: all 1s ease;
+        }
+
+        @include mobile{
+          margin:auto;
+          margin-top:1rem;
       }
+
+      }
+      @include mobile{
+        width:100%;
+    }
     }
 
     @include mobile {
@@ -56,9 +74,13 @@
         text-align: center;
       }
     }
+
+
+    @include mobile{
+      width:90%;
   }
 
-  @include mobile {
-    margin-top: 8rem;
   }
+
+
 }

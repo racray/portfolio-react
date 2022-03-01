@@ -1,0 +1,117 @@
+@import "../../global.scss";
+.contact {
+  margin-top: 10rem;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    margin-top: 25px;
+    font-size: 50px;
+  }
+
+  .container {
+    margin-top: 5rem;
+    display: flex;
+    gap: 11rem;
+    flex-direction: row;
+
+    @include mobile{
+      flex-direction: column;
+      gap:3rem;
+    }
+
+    .left{
+
+      display: flex;
+      flex-direction: column;
+      gap:1.5rem;
+      .left-line{
+        width:250px;
+        display: flex;
+        flex-direction: row;
+
+        align-items:center;
+
+        gap: 1rem;
+
+        @include mobile{
+          width:100%;
+        }
+
+        .left-icon{
+          height:2.5rem;
+          width:2.5rem;
+          color:rgb(61, 21, 61);
+        }
+        .left-details{
+          display: flex;
+          flex-direction: column;
+          h4{
+            font-size: 22px;
+            font-weight:500;
+          }
+          p{
+            font-size:14px;
+            color:rgb(61, 21, 61);
+            font-weight:500;
+          }
+        }
+      }
+
+    }
+      .right{
+
+        display: flex;
+        flex-direction: column;
+        form{
+          display: flex;
+          flex-direction: column;
+          gap:1.5rem;
+
+          Button {
+            margin-left: 0;
+            margin-top: 3rem;
+            width: 10rem;
+            height: 3rem;
+            background-color: rgb(61, 21, 61);
+            color: white;
+            font-weight: 400;
+            display:flex;
+            gap:0.5rem;
+      
+            &:hover{
+              background-color: rgb(31, 9, 31);
+              transition: all 1s ease;
+            }
+      
+            @include mobile{
+              margin:auto;
+              margin-top:1rem;
+          }
+      
+          }
+
+        
+        .form-control{
+          width:500px;
+        }
+      }
+      }
+
+
+    
+
+   
+
+    @include mobile{
+      width:90%;
+    }
+
+  }
+
+
+}
+
+

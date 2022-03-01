@@ -10,7 +10,7 @@ export default function Projects() {
       <h1>Projects</h1>
       <div className="container">
         {cardDetails.map((cd)=>
-        <div className="card">
+        <div className="card" key={cd.id}>
           <div className="left">
             <div className="img-container">
               <img
