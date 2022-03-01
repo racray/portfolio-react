@@ -13,9 +13,10 @@
 
   h1 {
     margin-top: 25px;
-    font-size: 25px;
+    font-size: 20px;
     @include mobile{
       text-align: center;
+      font-size:17px;
     }
   }
 
