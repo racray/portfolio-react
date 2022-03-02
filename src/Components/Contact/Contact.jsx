@@ -1,4 +1,5 @@
 import "./Contact.scss";
+import { useState } from "react";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import * as yup from "yup";
@@ -25,11 +26,14 @@ const formValidationSchema = yup.object({
 export default function Contact() {
   const API_URL = "https://nodejs-portfolio-xrayed.herokuapp.com"; //export to another file and use across all files
 
+  const [mess, setMess] = useState(null);
+
   const { handleSubmit, values, handleChange, handleBlur, errors, touched } =
     useFormik({
       initialValues: { name: "", email: "", message: "" },
       validationSchema: formValidationSchema,
       onSubmit: (details) => {
+        setMess("Thanks for your message. Will reply shortly ");
         fetch(`${API_URL}/details`, {
           method: "POST",
           body: JSON.stringify(details),
@@ -70,10 +74,18 @@ export default function Contact() {
           </div>
 
           <div className="icon-click">
-            <a href="https://www.linkedin.com/in/rayed-k-a88879a6/" target="_blank" rel="noreferrer">
+            <a
+              href="https://www.linkedin.com/in/rayed-k-a88879a6/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <LinkedInIcon className="left-icon" />
             </a>
-            <a href="https://github.com/racray" target="_blank" rel="noreferrer">
+            <a
+              href="https://github.com/racray"
+              target="_blank"
+              rel="noreferrer"
+            >
               <GitHubIcon className="left-icon" />
             </a>
           </div>
@@ -116,6 +128,8 @@ export default function Contact() {
               helperText={errors.message && touched.message && errors.message}
               variant="filled"
             />
+            {mess && <p>{mess}</p>}
+
             <Button type="submit">
               <span>Send</span> <SendOutlinedIcon />
             </Button>

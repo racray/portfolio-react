@@ -45,7 +45,6 @@
             width: 350px;
             height: 280px;
             object-fit: cover;
-
           }
         }
         .floating-div {
@@ -121,10 +120,14 @@
           }
           p{
             color:rgb(139, 134, 134);
+            @include mobile{
+
+              width:100%;
+            }
           }
         }
         @include mobile{
-          width:400px;
+          width:90%;
           height:200px;
 
         }
