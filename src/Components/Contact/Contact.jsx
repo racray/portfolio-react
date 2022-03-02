@@ -73,6 +73,7 @@ export default function Contact() {
             </div>
           </div>
 
+          <div className="left-line">
           <div className="icon-click">
             <a
               href="https://www.linkedin.com/in/rayed-k-a88879a6/"
@@ -88,6 +89,7 @@ export default function Contact() {
             >
               <GitHubIcon className="left-icon" />
             </a>
+          </div>
           </div>
         </div>
         <div className="right">
