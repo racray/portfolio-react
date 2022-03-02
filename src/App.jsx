@@ -9,7 +9,6 @@ import Projects from './Components/Projects/Projects';
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer';
 function App() {
-  console.log("This is a MERN stack portfolio. But i like to focus more on Reactjs")
   const [menuOpen,setMenuOpen] = useState(false);
   return (
     <div className="App">
