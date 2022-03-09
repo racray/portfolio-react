@@ -1,6 +1,3 @@
-
-
-
 export const FrontskillsData = [
   {
     id: 1,
@@ -23,16 +20,20 @@ export const FrontskillsData = [
     progBar: 80,
   },
   {
-    id:5,
-    title:"Vue",
+    id: 5,
+    title: "React Native",
+    progBar: 75,
+  },
+  {
+    id: 6,
+    title: "Vue",
     progBar: 70,
   },
   {
-    id:6,
-    title:"Quasar",
+    id: 7,
+    title: "Quasar",
     progBar: 65,
   },
-
 ];
 
 export const BackskillsData = [
@@ -45,7 +46,7 @@ export const BackskillsData = [
     id: 2,
     title: "Express",
     progBar: 60,
-  }
+  },
 ];
 
 export const cardDetails = [
