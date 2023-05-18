@@ -66,10 +66,10 @@ export default function Skills() {
             <div className="progres-div">
               <div className="progress-title ">
                 <span className="progress-head">MongoDB</span>
-                <span className="progress-no">50%</span>
+                <span className="progress-no">70%</span>
               </div>
               <div className="progress-bar">
-                <BorderLinearProgress variant="determinate" value={50} />
+                <BorderLinearProgress variant="determinate" value={70} />
               </div>
             </div>
           </div>

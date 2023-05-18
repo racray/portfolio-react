@@ -53,7 +53,7 @@ export default function Contact() {
             <CallOutlinedIcon className="left-icon" />
             <div className="left-details">
               <h4>Call me</h4>
-              <p>+91 7057690637</p>
+              <p>+973 33341472</p>
             </div>
           </div>
 
@@ -69,7 +69,7 @@ export default function Contact() {
             <LocationOnOutlinedIcon className="left-icon" />
             <div className="left-details">
               <h4>Location</h4>
-              <p>Pune,Maharashtra</p>
+              <p>Tashan,Bahrain</p>
             </div>
           </div>
 

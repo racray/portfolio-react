@@ -7,6 +7,7 @@
   }
   width: 100%;
   height: 70px;
+  overflow: hidden;
   background-color: rgb(53, 53, 53);
   color: white;
   position: fixed;
@@ -52,6 +53,7 @@
           margin-right: 20px;
           a {
             text-decoration: none;
+
           }
         }
       }

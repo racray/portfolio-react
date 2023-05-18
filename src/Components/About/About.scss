@@ -35,7 +35,11 @@
       flex-wrap: wrap;
       font-weight: 600;
       font-size: 22px;
-      width: 400px;
+      width: 480px;
+      a {
+
+        text-decoration: none;
+      
       Button {
         margin-top: 3rem;
         width: 10rem;
@@ -81,7 +85,7 @@
     @include mobile{
       width:90%;
   }
-
+    }
   }
 
 

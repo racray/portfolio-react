@@ -27,12 +27,12 @@ export const FrontskillsData = [
   {
     id: 6,
     title: "Vue",
-    progBar: 70,
+    progBar: 80,
   },
   {
     id: 7,
     title: "Quasar",
-    progBar: 65,
+    progBar: 80,
   },
 ];
 
@@ -55,7 +55,7 @@ export const cardDetails = [
     title: "E-commerce app",
     textHeader: "E-commerce app",
     textPara: "ONLINE SHOPPING WEB APP",
-    img: "https://magenest.com/wp-content/uploads/2021/03/ecommerce-website-types.png",
+    img: "https://th.bing.com/th/id/OIP.HZl99Up2wIcaHIztLLmttAHaE7?pid=ImgDet&rs=1",
     webFront: "https://github.com/racray/Ecommerceclient",
     webBack: "https://github.com/racray/Ecommerceapi",
     webLive: "https://kind-keller-3d8edb.netlify.app/",

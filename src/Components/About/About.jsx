@@ -13,9 +13,11 @@ export default function About() {
             <div className="about-text">
                 <p>
                 A self-taught developer.I'm enthusiastic about learning new skills, expanding my knowledge, and leveraging my learnings.I enjoy creating user experience design, interfaces and web development.
+                
+                <div>Check out my resume for past experiences 😀</div>
                 </p>
 
-                <a href="https://docs.google.com/document/d/1pxQ13Lx8ecTi-Ob9j6DIQVCANtTUgtZMaOF6dtqwjWo/edit?usp=sharing" target="_blank" rel="noreferrer"> 
+                <a href="https://drive.google.com/file/d/1wDB4xNxDCFpMIQreYDpIrog_xRYXlit6/view?usp=sharing" target="_blank" rel="noreferrer"> 
                 <Button><ArticleIcon/>
                 <span>Resume</span>
                 </Button>
